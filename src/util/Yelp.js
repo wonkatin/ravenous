@@ -29,4 +29,4 @@ const Yelp = {
   }
 };
 
-export default yelp;
+export default Yelp;
