@@ -5,6 +5,13 @@ import BusinessList from './components/BusinessList/BusinessList';
 import Yelp from '././util/Yelp';
 
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      businesses: []
+    };
+    this.searchYelp.bind(this);
+  }
   searchYelp(term, location, sortBy){
     console.log(`Searching Yelp for ${term}, ${location}, ${sortBy}`)
   }
